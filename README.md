@@ -2,7 +2,6 @@
 
 **ICEPAY library to integrate ICEPAY in your projects.**
 
-[![Build Status](https://travis-ci.org/icepay/icepay.svg?branch=develop)](https://travis-ci.org/icepay/icepay)
 [![Coverage Status](https://coveralls.io/repos/icepay/icepay/badge.png?branch=develop)](https://coveralls.io/r/icepay/icepay?branch=develop)
 [![Latest Stable Version](https://poser.pugx.org/icepay/icepay/v/stable.svg)](https://packagist.org/packages/icepay/icepay)
 [![Total Downloads](https://poser.pugx.org/icepay/icepay/downloads.svg)](https://packagist.org/packages/icepay/icepay)
