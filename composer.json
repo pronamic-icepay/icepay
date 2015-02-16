@@ -1,0 +1,16 @@
+{
+	"name": "icepay/icepay",
+	"description": "ICEPAY library to integrate ICEPAY in your projects.",
+	"keywords": ["icepay", "payment", "api"],
+	"homepage": "https://icepay.com/",
+	"support": {
+		"issues": "https://github.com/icepay/icepay/issues",
+		"source": "https://github.com/icepay/icepay"
+	},
+	"autoload": {
+		"classmap": ["api/"]
+	},
+	"require": {
+		"php": ">=5.2.4"
+	}
+}
