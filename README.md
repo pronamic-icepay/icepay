@@ -8,7 +8,6 @@
 [![Total Downloads](https://poser.pugx.org/icepay/icepay/downloads.svg)](https://packagist.org/packages/icepay/icepay)
 [![Latest Unstable Version](https://poser.pugx.org/icepay/icepay/v/unstable.svg)](https://packagist.org/packages/icepay/icepay)
 [![License](https://poser.pugx.org/icepay/icepay/license.svg)](https://packagist.org/packages/icepay/icepay)
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 ## Documentation
 
