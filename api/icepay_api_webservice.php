@@ -284,9 +284,10 @@ class Icepay_Webservice_Base extends Icepay_Api_Base {
      * @access public
      * @param object $obj
      * @param string $secretCode  
+     * @param bool $isautocheckout  
      * @return string
      */
-    public function generateChecksum($obj = null, $secretCode = null)
+    public function generateChecksum($obj = null, $secretCode = null,$isautocheckout = false)
     {
         $arr = array();
         if ($secretCode)
@@ -296,7 +297,11 @@ class Icepay_Webservice_Base extends Icepay_Api_Base {
             $insert = $val;
 
             if (is_bool($val)) {
-                $insert = ($val) ? 'True' : 'False';
+                if ($isautocheckout) {
+					$insert = ($val) ? 'True' : 'False';	// autocheckout function computes boolean checksum differently (first character uppercase)
+				} else {
+					$insert = ($val) ? 'true' : 'false';
+				}
             }
 
             array_push($arr, $insert);
@@ -1057,7 +1062,7 @@ class Icepay_Webservice_Pay extends Icepay_Webservice_Base {
         $this->validateAutoCheckout($obj);
 
         // Generate Checksum
-        $obj->Checksum = $this->generateChecksum($obj, $this->getSecretCode());
+        $obj->Checksum = $this->generateChecksum($obj, $this->getSecretCode(), true);
 
         // Checksum is generated without the consumer ID
         $obj->ConsumerID = $consumerID;
@@ -1076,7 +1081,7 @@ class Icepay_Webservice_Pay extends Icepay_Webservice_Base {
         ));
 
         /* Verify response data */
-        if ($checksum != $this->generateChecksum($checksumObject, null, $boolUpper = true))
+        if ($checksum != $this->generateChecksum($checksumObject, null, true))
             throw new Exception("Data could not be verified");
 
         // Return checksum

@@ -1,5 +1,26 @@
 [RELEASES]
 
+::      Version 2.5.1: Small correction
+        Release date: dec 18th, 2014
+        Updated by: Jeroen Hehemann
+
+        Changes
+            - removed Friesland Bank from iDEAL issuers
+	Altered Files:
+            - api/paymentmethods/ideal.php
+        ~
+
+
+::      Version 2.5.0: Bugfix
+        Release date: aug 29th, 2014
+        Updated by: Dennis Geerdink
+
+        Changes
+            - fix checksum calculation (autoCheckout checksum differs)
+	Altered Files:
+            - api/icepay_api_webservice.php
+        ~
+
 ::      Version 2.4.0: PayByMail & AutoCapture
         Release date: 12 nob 2013
         Updated by: Wouter van Tilburg (My last update ^_^)
