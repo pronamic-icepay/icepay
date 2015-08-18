@@ -175,9 +175,8 @@ class Icepay_Webservice_Base extends Icepay_Api_Base {
         /* Set the options for the SOAP request */
         $sslContext = array(
             'ssl' => array(
-                'local_cert' => realpath(dirname(__FILE__) . "/resources/cacert.pem"),
                 'allow_self_signed' => false,
-                'verify_peer' => false
+                'verify_peer' => true
             )
         );
 
