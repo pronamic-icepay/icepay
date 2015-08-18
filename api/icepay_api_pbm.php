@@ -113,13 +113,6 @@ class Icepay_Api_Pbm extends Icepay_Api_Base {
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $parameters);
-        /*
-        PBM will use SSL soon. For now we disable the CAINFO and SSL options.
-
-        curl_setopt($ch, CURLOPT_CAINFO, realpath(dirname(__FILE__) . "/resources/comodo.pem"));
-        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, TRUE);
-        */
 
         $result = curl_exec($ch);
 
