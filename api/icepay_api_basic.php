@@ -476,6 +476,9 @@ class Icepay_Basicmode extends Icepay_Api_Base {
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_CAINFO, realpath(dirname(__FILE__) . "/resources/cacert.pem"));
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, TRUE);
         curl_setopt($ch, CURLOPT_HEADER, 0);
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $data);

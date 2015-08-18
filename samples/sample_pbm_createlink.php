@@ -46,7 +46,7 @@ try {
 
     $result = $pbm->createLink($pbmObj);
     
-    if (true === $reesult->success) {
+    if (true === $result->success) {
         echo $result->url;
     } else {
         echo $result->errorCode . '<br />';

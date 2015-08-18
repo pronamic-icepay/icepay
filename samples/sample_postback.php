@@ -40,8 +40,7 @@ $logger->enableLogging()
 /* Start the postback class */
 $icepay = new Icepay_Postback();
 $icepay->setMerchantID(MERCHANTID)
-        ->setSecretCode(SECRETCODE)
-        ->doIPCheck(); // We encourage to enable ip checking for your own security
+        ->setSecretCode(SECRETCODE);
 
 $order  = new Example_Order(); // This is a dummy class to depict a sample usage.
 
