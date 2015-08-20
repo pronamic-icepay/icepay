@@ -3,7 +3,7 @@
 /**
  *  ICEPAY API
  *
- *  @version 2.4.0
+ *  @version 2.5.2
  *  @author Olaf Abbenhuis
  *  @author Wouter van Tilburg
  *  @copyright Copyright (c) 2012, ICEPAY
@@ -529,7 +529,7 @@ class Icepay_StatusCode {
 class Icepay_Project_Helper {
 
     private static $instance;
-    private $_release = "2.4.0";
+    private $_release = "2.5.2";
     private $_basic;
     private $_result;
     private $_postback;
