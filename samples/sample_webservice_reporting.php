@@ -30,7 +30,7 @@ define('REPORTINGUSER', "xxxxxxx");
 define('REPORTINGUSERAGENT', "xxxxxxxxxxxxxxxxxxx");
 
 // Include the API into your project
-require_once '../api/icepay_api_webservice.php';
+require_once '../src/icepay_api_webservice.php';
 
 // Initiate the Refund instance
 $reporting = Icepay_Api_Webservice::getInstance()->reportingService();

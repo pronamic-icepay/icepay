@@ -27,7 +27,7 @@ define('SECRETCODE', "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"); //<--- Change 
 define('PAYMENTID', 1234567); // <--- Change this into the payment ID
 
 // Include the API into your project
-require_once '../api/icepay_api_webservice.php';
+require_once '../src/icepay_api_webservice.php';
 
 $payment = Icepay_Api_Webservice::getInstance()->paymentService();
 $logger  = Icepay_Api_Logger::getInstance();

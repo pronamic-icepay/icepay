@@ -1,14 +1,16 @@
 {
 	"name": "icepay/icepay",
 	"description": "ICEPAY library to integrate ICEPAY in your projects.",
-	"keywords": ["icepay", "payment", "api"],
+    "keywords": [
+        "icepay", "payment", "service", "ideal", "creditcard", "mistercash", "bancontact", "sofort", "sofortbanking", "paypal", "paysafecard", "banktransfer", "refund", "api", "payments", "gateway", "yourgift", "phone", "afterpay"
+    ],
 	"homepage": "https://icepay.com/",
 	"support": {
 		"issues": "https://github.com/icepay/icepay/issues",
 		"source": "https://github.com/icepay/icepay"
 	},
 	"autoload": {
-		"classmap": ["api/"]
+		"classmap": ["src/"]
 	},
 	"require": {
 		"php": ">=5.2.4"

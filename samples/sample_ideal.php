@@ -26,7 +26,7 @@ define('MERCHANTID',12345);//<--- Change this into your own merchant ID
 define('SECRETCODE',"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");//<--- Change this into your own merchant ID
 
 // Include the API into your project
-require_once '../api/icepay_api_basic.php';
+require_once '../src/icepay_api_basic.php';
 
 /* Apply logging rules */
 $logger = Icepay_Api_Logger::getInstance();
@@ -38,7 +38,7 @@ $logger->enableLogging()
         ->logToScreen();
 
 // Read paymentmethods from folder and ensures the classes are included
-$api = Icepay_Api_Basic::getInstance()->readFolder(realpath('../api/paymentmethods'));
+$api = Icepay_Api_Basic::getInstance()->readFolder(realpath('../src/paymentmethods'));
 
 // Store all paymentmethods in an array, as an example for loading programmatically
 $paymentmethods = $api->getArray();

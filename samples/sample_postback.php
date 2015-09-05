@@ -26,7 +26,7 @@ define('MERCHANTID', 12345);//<--- Change this into your own merchant ID
 define('SECRETCODE', "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");//<--- Change this into your own merchant ID
 define('EMAIL',"test@example.com");//<--- Change this into your own e-mail address
 
-require_once '../api/icepay_api_basic.php';
+require_once '../src/icepay_api_basic.php';
 
 /* Apply logging rules */
 $logger = Icepay_Api_Logger::getInstance();

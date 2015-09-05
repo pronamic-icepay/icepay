@@ -25,7 +25,7 @@
 define('MERCHANTID', 12345);//<--- Change this into your own merchant ID
 define('SECRETCODE', "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");//<--- Change this into your own merchant ID
 
-require_once '../api/icepay_api_basic.php';
+require_once '../src/icepay_api_basic.php';
 
 
 /* Apply logging rules */

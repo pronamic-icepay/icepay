@@ -26,7 +26,7 @@ define('MERCHANTID', 'xxxxxx');
 define('SECRETCODE', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
 
 // Include the API into your project
-require_once '../api/icepay_api_pbm.php';
+require_once '../src/icepay_api_pbm.php';
 
 try {
     /* Set the payment */

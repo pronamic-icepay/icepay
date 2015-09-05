@@ -28,7 +28,7 @@ define('SECRETCODE',"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");//<--- Change this in
 define('PINCODE', 123456);
 
 // Include the API into your project
-require_once '../api/icepay_api_webservice.php';
+require_once '../src/icepay_api_webservice.php';
 
 /* Set the payment */
 $paymentObj = new Icepay_PaymentObject();

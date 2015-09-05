@@ -26,7 +26,7 @@ define('MERCHANTID', 12345); //<--- Change this into your own merchant ID
 define('SECRETCODE', "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"); //<--- Change this into your own merchant ID
 
 // Include the API into your project
-require_once '../api/icepay_api_webservice.php';
+require_once '../src/icepay_api_webservice.php';
 
 // Initiate the Refund instance
 $refund = Icepay_Api_Webservice::getInstance()->refundService();
