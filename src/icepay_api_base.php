@@ -138,6 +138,10 @@ class Icepay_TransactionObject implements Icepay_WebserviceTransaction_Interface
         return $this->data->EndUserIP;
     }
 
+    public function getOrderID()
+    {
+        return $this->data->OrderID;
+    }
 }
 
 /**
