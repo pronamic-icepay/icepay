@@ -1304,6 +1304,7 @@ class Icepay_Postback extends Icepay_Api_Base {
             "transactionID" => "TransactionID",
             "consumerName" => "ConsumerName",
             "consumerAccountNumber" => "ConsumerAccountNumber",
+            "consumerBIC" => "ConsumerBIC",
             "consumerAddress" => "ConsumerAddress",
             "consumerHouseNumber" => "ConsumerHouseNumber",
             "consumerCity" => "ConsumerCity",

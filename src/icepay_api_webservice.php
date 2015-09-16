@@ -1546,7 +1546,7 @@ class Icepay_Webservice_Pay extends Icepay_Webservice_Base {
         // Order object in correct order for Checksum
         $result = $this->arrangeObject($result, array(
             "Checksum", "MerchantID", "Timestamp", "PaymentID",
-            "Amount", "ConsumerAccountNumber", "ConsumerAddress",
+            "Amount", "ConsumerAccountNumber", "ConsumerBIC", "ConsumerAddress",
             "ConsumerCity", "ConsumerCountry", "ConsumerEmail",
             "ConsumerHouseNumber", "ConsumerIPAddress", "ConsumerName",
             "ConsumerPhoneNumber", "Currency", "Description", "Duration",
