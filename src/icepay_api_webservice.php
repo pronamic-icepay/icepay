@@ -3,7 +3,7 @@
 /**
  *  ICEPAY API
  *
- *  @version 2.4.0
+ *  @version 2.5.3
  *  @author Olaf Abbenhuis
  *  @author Wouter van Tilburg
  *  @copyright Copyright (c) 2012, ICEPAY
@@ -35,7 +35,7 @@ class Icepay_Api_Webservice extends Icepay_Api_Base {
     private $_service_autoCapture;
     private $_filtering;
     private $_single;
-    protected $version = "2.5.2";
+    protected $version = "2.5.3";
 
     /**
      * Create an instance

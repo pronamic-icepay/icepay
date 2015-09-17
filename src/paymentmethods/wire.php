@@ -2,7 +2,7 @@
 
 class Icepay_Paymentmethod_Wire extends Icepay_Paymentmethod
 {
-    public $_version       = "2.5.2";
+    public $_version       = "2.5.3";
     public $_method        = "WIRE";
     public $_readable_name = "Wire Transfer";
     public $_issuer        = array('DEFAULT');

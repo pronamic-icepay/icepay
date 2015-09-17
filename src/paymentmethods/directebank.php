@@ -2,7 +2,7 @@
 
 class Icepay_Paymentmethod_Directebank extends Icepay_Paymentmethod
 {
-    public $_version       = "2.5.2";
+    public $_version       = "2.5.3";
     public $_method        = "DIRECTEBANK";
     public $_readable_name = "SOFORT Banking";
     public $_issuer        = array('RETAIL', 'DIGITAL', 'ADULT');

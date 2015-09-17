@@ -2,7 +2,7 @@
 
 class Icepay_Paymentmethod_Phone extends Icepay_Paymentmethod
 {
-    public $_version       = "2.5.2";
+    public $_version       = "2.5.3";
     public $_method        = "PHONE";
     public $_readable_name = "Phone (Progressbar)";
     public $_issuer        = array('PBAR');

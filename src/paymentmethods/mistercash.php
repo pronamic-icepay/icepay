@@ -2,7 +2,7 @@
 
 class Icepay_Paymentmethod_Mistercash extends Icepay_Paymentmethod
 {
-    public $_version       = "2.5.2";
+    public $_version       = "2.5.3";
     public $_method        = "MISTERCASH";
     public $_readable_name = "MisterCash";
     public $_issuer        = array('MISTERCASH');

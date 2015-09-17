@@ -25,6 +25,7 @@ If you found a repeatable bug, and troubleshooting tips didn't help, then be sur
 
 Version | Release date | Changes
 ------- | ------------ | ------------------------
+2.5.3   | 17/08/2015   | Added BIC to getPayment() function.<br>Track a users transaction (see [#2](https://github.com/icepay/icepay/pull/2) for more information).
 2.5.2   | 18/08/2015   | Added [LICENSE](https://github.com/icepay/icepay/blob/develop/LICENSE.md) to API repository.<br>Updated supported payment method parameters.
 2.5.1   | 18/12/2014   | Removed Friesland Bank from iDEAL issuers.
 2.5.0   | 29/08/2014   | Fix checksum calculation (autoCheckout checksum differs)

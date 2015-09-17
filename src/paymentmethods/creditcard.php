@@ -2,7 +2,7 @@
 
 class Icepay_Paymentmethod_Creditcard extends Icepay_Paymentmethod
 {
-    public $_version       = "2.5.2";
+    public $_version       = "2.5.3";
     public $_method        = "CREDITCARD";
     public $_readable_name = "Creditcards";
     public $_issuer        = array('AMEX', 'MASTER', 'VISA');

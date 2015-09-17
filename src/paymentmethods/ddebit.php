@@ -2,7 +2,7 @@
 
 class Icepay_Paymentmethod_Ddebit extends Icepay_Paymentmethod
 {
-    public $_version       = "2.5.2";
+    public $_version       = "2.5.3";
     public $_method        = "DDEBIT";
     public $_readable_name = "Direct Debit";
     public $_issuer        = array('INCASSO');

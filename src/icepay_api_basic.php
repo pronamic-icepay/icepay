@@ -37,7 +37,7 @@ require_once(DIR . DS . "icepay_api_base.php");
 class Icepay_Api_Basic extends Icepay_Api_Base {
 
     private static $instance;
-    private $version = "2.5.2";
+    private $version = "2.5.3";
     private $_folderPaymentMethods;
     private $paymentMethods = null; // Classes
     private $_paymentMethodsObject = null; // Loaded classes

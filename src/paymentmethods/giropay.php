@@ -2,7 +2,7 @@
 
 class Icepay_Paymentmethod_Giropay extends Icepay_Paymentmethod
 {
-    public $_version       = "2.5.2";
+    public $_version       = "2.5.3";
     public $_method        = "GIROPAY";
     public $_readable_name = "Giropay";
     public $_issuer        = array('DEFAULT');

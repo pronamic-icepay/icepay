@@ -2,7 +2,7 @@
 
 class Icepay_Paymentmethod_Sms extends Icepay_Paymentmethod
 {
-    public $_version       = "2.5.2";
+    public $_version       = "2.5.3";
     public $_method        = "SMS";
     public $_readable_name = "SMS Text";
     public $_issuer        = array('DEFAULT');
