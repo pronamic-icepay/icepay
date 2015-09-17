@@ -1554,8 +1554,18 @@ class Icepay_Webservice_Pay extends Icepay_Webservice_Base {
             "Reference", "Status", "StatusCode", "TestMode"
         ));
 
-        /* Verify response data */
-        if ($checksum != $this->generateChecksum($result))
+        /* Custom checksum for extra fields */
+        $signstring = $this->arrangeObject($result, array(
+            "Checksum", "MerchantID", "Timestamp", "PaymentID",
+            "Amount", "ConsumerAccountNumber", "ConsumerAddress",
+            "ConsumerCity", "ConsumerCountry", "ConsumerEmail",
+            "ConsumerHouseNumber", "ConsumerIPAddress", "ConsumerName",
+            "ConsumerPhoneNumber", "Currency", "Description", "Duration",
+            "Issuer", "OrderID", "OrderTime", "PaymentMethod", "PaymentTime",
+            "Reference", "Status", "StatusCode", "TestMode"
+        ));
+
+        if ($checksum != $this->generateChecksum($signstring))
             throw new Exception("Data could not be verified");
 
         /* Return mister checksum */
