@@ -1425,6 +1425,7 @@ class Icepay_Postback extends Icepay_Api_Base {
             "consumerName" => "ConsumerName",
             "consumerAccountNumber" => "ConsumerAccountNumber",
             "consumerAddress" => "ConsumerAddress",
+            "consumerPostcode" => "ConsumerPostcode",
             "consumerHouseNumber" => "ConsumerHouseNumber",
             "consumerCity" => "ConsumerCity",
             "consumerCountry" => "ConsumerCountry",
